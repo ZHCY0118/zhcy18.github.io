@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常用链接-张慧超翼个人网站</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        .box-1 {
+            margin: 20px 0;
+        }
+
+
+        .box1-1-title h3 {
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            font-size: 23px;
+            color: red;
+        }
+
+        .box-1-list1 ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: transparent;
+        }
+
+        /*正方形边缘*/
+        .box-1-list1 ul li {
+            cursor: pointer;
+            width: 23%;
+            margin: 20px 0;
+            border: 0px;
+        }
+
+        .box-1-list1 ul li:hover {
+            box-shadow: 2px 3px 5px #ccc;
+        }
+
+        .box-1-list1-img {
+            width: 100%;
+            height: width;
+        }
+
+        .box-1-list1-img img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /*链接颜色*/
+        .box-1-list1-img a:hover {
+            background-color: transparent;
+        }
+
+        .box-1-list1-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .box-ll-t-l span {
+            font-size:large;
+            text-align: center;
+            color: rgb(8, 8, 8);
+        }
+
+        /* box-1文本右侧 */
+        .box-ll-t-r a {
+            display: inline-block;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            background: linear-gradient(270deg, #fc0463, #fa04e5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <!-- 每区都有一个公共类public-width,调节长度 -->
+        <div class="public-width">
+            <!-- 导航区有两部分，一个logo,一个超链接 -->
+            <!-- logo -->
+            <div class="nav-logo">
+                <img src="images/logo.jpg" alt="">
+            </div>
+            <!-- 无序列表nav-list -->
+            <div class="nav-list">
+                <ul>
+                    <li>
+                        <p>张慧超翼<br>2021213364</p>
+                    </li>
+                    <li>
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li class="active">
+                        <a href="introduce.html">个人介绍</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="">兴趣爱好</a>
+                        <div class="dropdown-content">
+                            <a href="music.html">音乐</a><br>
+                            <a href="movies.html">电影</a><br>
+                            <a href="books.html">书籍</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="">相册</a>
+                        <div class="dropdown-content">
+                            <a href="personalablum.html">人像相册</a><br>
+                            <a href="travelablum.html">风景相册</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="links.html">常用链接</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">联系我</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end of nav-list -->
+        </div>
+        <!-- end of public-width -->
+    </div>
+    <div class="public-width">
+        <!-- title -->
+        <!-- end of title -->
+        <!-- list -->
+        <div class="box-1-list1">
+            <!-- 无序表 -->
+            <ul>
+                <!-- 行1 -->
+                <li>
+                    <!-- 两部分：图片img+文本text -->
+                    <div class="box-1-list1-img">
+                        <a href="https://www.baidu.com/" target="_blank">
+                            <img src="images/baidu.jpg" alt=""></a>
+                    </div>
+                    <div class="box-1-list-text">
+                        <!-- text分为左右两部分 -->
+                        <div class="box-ll-t-l">
+                            <span>百度</span>
+                        </div>
+                        <div class="box-ll-t-r">
+                            <a href="https://www.baidu.com/" target="_blank">点击进入</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- 行2 -->
+                <li>
+                    <!-- 两部分：图片img+文本text -->
+                    <div class="box-1-list1-img">
+                        <a href="https://www.bilibili.com/" target="_blank"><img src="images/bilibili.jpg" alt=""></a>
+                    </div>
+                    <div class="box-1-list-text">
+                        <!-- text分为左右两部分 -->
+                        <div class="box-ll-t-l">
+                            <span>bilibili</span>
+
+                        </div>
+                        <div class="box-ll-t-r">
+                            <a href="https://www.bilibili.com/" target="_blank">点击进入</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- 行3 -->
+                <li>
+                    <!-- 两部分：图片img+文本text -->
+                    <div class="box-1-list1-img">
+                        <a href=" https://www.zhihu.com/" target="_blank"><img src="images/zhihu.jpg" alt=""></a>
+                    </div>
+                    <div class="box-1-list1-text">
+                        <!-- text分为左右两部分 -->
+                        <div class="box-ll-t-l">
+                            <span>知乎</span>
+                        </div>
+                        <div class="box-ll-t-r">
+                            <a href=" https://www.zhihu.com/" target="_blank">点击进入</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- 行4 -->
+                <li>
+                    <!-- 两部分：图片img+文本text -->
+                    <div class="box-1-list1-img">
+                        <a href="https://leetcode.cn/problemset/all/" target="_blank"><img src="images/likou.jpg" alt=""></a>
+                    </div>
+                    <div class="box-1-list-text">
+                        <!-- text分为左右两部分 -->
+                        <div class="box-ll-t-l">
+                            <span>力扣</apan>
+
+                        </div>
+                        <div class="box-ll-t-r">
+                            <a href="https://leetcode.cn/problemset/all/" target="_blank">点击进入</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- 行5 -->
+                <li>
+                    <!-- 两部分：图片img+文本text -->
+                    <div class="box-1-list1-img">
+                        <a href=" https://www.github.com/" target="_blank"><img src="images/GITHUB.jpg" alt=""></a>
+                    </div>
+                    <div class="box-1-list-text">
+                        <!-- text分为左右两部分 -->
+                        <div class="box-ll-t-l">
+                            <span>GitHub</span>
+
+                        </div>
+                        <div class="box-ll-t-r">
+                            <a href=" https://www.github.com/" target="_blank">点击进入</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- 行6 -->
+                <li>
+                    <!-- 两部分：图片img+文本text -->
+                    <div class="box-1-list1-img">
+                        <a href=" https://juejin.cn/" target="_blank"><img src="images/juejin.jpg" alt=""></a>
+                    </div>
+                    <div class="box-1-list-text">
+                        <!-- text分为左右两部分 -->
+                        <div class="box-ll-t-l">
+                            <span>掘金</span>
+
+                        </div>
+                        <div class="box-ll-t-r">
+                            <a href=" https://juejin.cn/" target="_blank">点击进入</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- 行7 -->
+                <li>
+                    <!-- 两部分：图片img+文本text -->
+                    <div class="box-1-list1-img">
+                        <a href="https://www.google.com/" target="_blank"><img src="images/guge.jpg" alt=""></a>
+                    </div>
+                    <div class="box-1-list-text">
+                        <!-- text分为左右两部分 -->
+                        <div class="box-ll-t-l">
+                            <span>Google</span>
+
+                        </div>
+                        <div class="box-ll-t-r">
+                            <a href="https://www.google.com/" target="_blank">点击进入</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- 行8 -->
+                <li>
+                    <!-- 两部分：图片img+文本text -->
+                    <div class="box-1-list1-img">
+                        <a href="https://www.icourse163.org/" target="_blank"><img src="images/mocc.jpg" alt=""></a>
+                    </div>
+                    <div class="box-1-list-text">
+                        <!-- text分为左右两部分 -->
+                        <div class="box-ll-t-l">
+                            <span>中国大学MOOC网</span>
+
+                        </div>
+                        <div class="box-ll-t-r">
+                            <a href="https://www.icourse163.org/" target="_blank">点击进入</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- end of list -->
+    </div>
+</body>
+
+</html>

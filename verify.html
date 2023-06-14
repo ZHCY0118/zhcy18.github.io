@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>张慧超翼的个人网站登录页面</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+
+        form {
+            width: 420px;
+            height: 200px;
+            padding-top: 60px;
+            margin: 250px auto;
+            background: rgb(255, 255, 255, 0.1);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .form-control {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .number,
+        .pas {
+            width: 165px;
+            height: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 2px 2px 2px 22px;
+            border-radius: 5px;
+            color: black;
+        }
+
+        .loginbtn {
+            width: 193px;
+            height: 28px;
+            border-radius: 6px;
+            border: 10px solid #000;
+            margin-left: 45px;
+            background: #2d77bd;
+            color: #FFF;
+            border: none;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function check(thisform) {
+
+            var name = document.getElementById("name").value;  //读取表单数据，创建变量
+            var pass = document.getElementById("pass").value;
+
+            if (name === "zhcy" && pass === "20030118") {
+                //验证变量。此处设置账号、密码（可设置多组，用||隔开）
+                alert("登录成功！");
+                window.document.f.action = "index.html";  //此处设置登录后跳转页面
+                window.document.f.submit();
+            }
+            else {
+                alert("用户名或密码错误！");
+            }
+
+        }
+
+    </script>
+</head>
+<link href="cssyle.css" rel="stylesheet" type="texts">
+
+<body>
+    <form action="#" method="post" name="f" onsubmit="check(this)">
+        <div class="form-control">
+            <p>欢迎来到张慧超翼的个人网站，请输入密码进入</p><br>
+            <label for="name">账号</label>
+            <input type="text" value="zhcy" id="name" class="number" pattern="^[a-zA-Z0-9]*$" required />
+        </div>
+        <div class="form-control">
+            <label for="pass">密码</label>
+            <input type="password" id="pass" class="pas" pattern="^[a-zA-Z0-9]*$" required /><br><br>
+            <input type="button" onclick="check(this)" value="登录">
+    </form>
+</body>
+
+</html>
